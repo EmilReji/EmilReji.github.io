@@ -113,6 +113,15 @@ h4 {
   font-size: 1.5rem;
 }
 
+a {
+  color: var(--color-maroon);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-purple);
+}
+
 header {
   position: fixed;
   display: flex;
@@ -138,13 +147,74 @@ section {
   background-color: var(--color-white);
 }
 
+section > p {
+  margin: auto;
+}
+
 section.profile {
   padding-top: 50px;
 }
 
-section.main_project {
+section p {
+  line-height: 1.5;
+  padding: 20px;
+  width: 750px;
+}
+
+section.profile img {
+  border-radius: 50%;
+  width: 250px;
+}
+
+section.stagehand {
+  background-color: var(--color-yellow);
+  height: 1200px;
+}
+
+section.stagehand section {
   background-color: var(--color-yellow);
 }
+
+section.stagehand_subcontainer{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#stagehand_logo {
+  display: block;
+  margin: auto;
+  width: 500px;
+}
+
+section.stagehand_details p{
+  text-align: left;
+}
+
+#arch {
+  width: 900px;
+}
+
+
+#button {
+  background-color: var(--color-maroon);
+  box-shadow: 5px 5px 5px var(--color-purple);
+  border: none;
+  color: white;
+  margin-top: 50px;
+  padding: 20px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: var(--color-purple);
+}
+
 /* 
 section.other_projects {
   background-color: #F7A240;
@@ -154,21 +224,6 @@ section.projects {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-}
-
-section > p {
-  margin: auto;
-}
-
-section.profile p {
-  line-height: 1.5;
-  padding: 20px;
-  width: 750px;
-}
-
-section.profile img {
-  border-radius: 50%;
-  width: 250px;
 }
 
 footer {
