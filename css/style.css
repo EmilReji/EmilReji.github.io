@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans&display=swap");
+
+
 /*
 ----------------------------------------
 Tantek Celik's Whitespace Reset
@@ -83,6 +87,8 @@ My CSS
 */
 
 :root {
+  /* --font-family-header: "Anton", sans-serif;
+  --font-family-body: "Work Sans", sans-serif; */
   --color-purple: #1a1053;
   --color-maroon: #b82a52;
   --color-yellow: #f7a240;
@@ -238,8 +244,6 @@ section.project img {
 section.project p {
   width: 600px;
   margin: auto;
-  color: var(--color-black);
-  font-size: 1.5rem;
 }
 
 footer {
