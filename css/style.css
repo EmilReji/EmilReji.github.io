@@ -7,40 +7,106 @@ Description:  Resets default styling of browsers to a common base
 ----------------------------------------
 */
 
-ul, ol { list-style: none; }
-h1, h2, h3, h4, h5, h6, pre, code { font-size: 1em; }
-ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote,
-fieldset, input, dl, dt, dd, figure, figcaption {
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code {
+  font-size: 1em;
+}
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+body,
+html,
+p,
+blockquote,
+fieldset,
+input,
+dl,
+dt,
+dd,
+figure,
+figcaption {
   margin: 0;
   padding: 0;
 }
-a img, :link img, :visited img, fieldset { border: none; }
-address { font-style: normal; }
-header, section, article, nav, footer, hgroup, details, summary, figure, main {
+a img,
+:link img,
+:visited img,
+fieldset {
+  border: none;
+}
+address {
+  font-style: normal;
+}
+header,
+section,
+article,
+nav,
+footer,
+hgroup,
+details,
+summary,
+figure,
+main {
   display: block;
 }
 mark {
   color: inherit;
   background-color: transparent;
 }
-abbr { border: none; }
-summary::-webkit-details-marker { display: none; }
+abbr {
+  border: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
 
 /*
 My CSS
 */
+
+:root {
+  --color-purple: #1a1053;
+  --color-maroon: #b82a52;
+  --color-yellow: #f7a240;
+  --color-black: #000000;
+  --color-white: #f7f7f7;
+}
 body {
   font-size: 24px;
-  font-family: "Lato", sans-serif; 
+  font-family: "Work Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family:"Roboto", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Anton", sans-serif;
   font-weight: 9000;
+  color: var(--color-maroon);
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h4 {
@@ -65,24 +131,24 @@ article {
 }
 
 article > section {
-  height: 900px;
+  height: 750px;
 }
 
-article > section > *:first-child {
-  padding-top: 300px;
+section {
+  background-color: var(--color-white);
 }
 
 section.profile {
-  background-color: #9CC3D5FF;
+  padding-top: 50px;
 }
 
 section.main_project {
-  background-color: #0063B2FF;
+  background-color: var(--color-yellow);
 }
-
+/* 
 section.other_projects {
-  background-color: #9CC3D5FF;
-}
+  background-color: #F7A240;
+} */
 
 section.projects {
   display: flex;
@@ -91,19 +157,29 @@ section.projects {
 }
 
 section > p {
-  width: 50%;
   margin: auto;
 }
 
-footer {
-  background-color: #0063B2FF;
-  height: 300px;
-  text-align: center;
+section.profile p {
+  line-height: 1.5;
+  padding: 20px;
+  width: 750px;
 }
 
-footer > p {
+section.profile img {
+  border-radius: 50%;
+  width: 250px;
+}
+
+footer {
+  background-color: var(--color-yellow);
+  height: 300px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+footer > h4 {
   padding: 30px;
-  font-weight: 900;
 }
 
 footer > a {
@@ -116,4 +192,20 @@ header img {
 
 footer img {
   width: 60px;
+}
+
+ul,
+ol {
+  list-style: inside;
+}
+
+a img {
+  width: 50px;
+  background-color: var(--color-maroon);
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px var(--color-purple);
+}
+
+a img:hover {
+  background-color: var(--color-purple);
 }
