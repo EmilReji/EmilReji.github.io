@@ -215,15 +215,31 @@ section.stagehand_details p{
   background-color: var(--color-purple);
 }
 
-/* 
-section.other_projects {
-  background-color: #F7A240;
-} */
+
+section.other_projects h2 {
+  padding: 50px;
+}
 
 section.projects {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+section.project {
+  width: 33%;
+}
+
+section.project img {
+  width: 500px;
+  box-shadow: 5px 5px 5px var(--color-purple);
+}
+
+section.project p {
+  width: 600px;
+  margin: auto;
+  color: var(--color-black);
+  font-size: 1.5rem;
 }
 
 footer {
@@ -254,13 +270,13 @@ ol {
   list-style: inside;
 }
 
-a img {
+footer a img, header a img {
   width: 50px;
   background-color: var(--color-maroon);
   border-radius: 50%;
   box-shadow: 5px 5px 5px var(--color-purple);
 }
 
-a img:hover {
+footer a img:hover, header a img:hover {
   background-color: var(--color-purple);
 }
