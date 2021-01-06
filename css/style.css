@@ -86,7 +86,254 @@ summary::-webkit-details-marker {
 My CSS
 */
 
+:root {
+  /* --font-family-header: "Anton", sans-serif;
+  --font-family-body: "Work Sans", sans-serif; */
+  --color-purple: #1a1053;
+  --color-maroon: #b82a52;
+  --color-yellow: #f7a240;
+  --color-black: #000000;
+  --color-white: #f7f7f7;
+}
+
 body {
-  font-size: 24px;
+  font-size: 28px;
   font-family: "Work Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Anton", sans-serif;
+  font-weight: 9000;
+  color: var(--color-maroon);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--color-maroon);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-purple);
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+header > a {
+  padding: 5px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section {
+  background-color: var(--color-white);
+}
+
+section > p {
+  margin: auto;
+}
+
+section.profile {
+  padding: 100px;
+}
+
+section.profile p {
+  width: 50%;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+section.stagehand_details {
+  line-height: 1.5;
+  padding: 20px;
+  width: 60%;
+}
+
+section.profile img {
+  border-radius: 50%;
+  width: 250px;
+}
+
+section.stagehand {
+  background-color: var(--color-yellow);
+  padding: 100px;
+}
+
+section.stagehand section {
+  background-color: var(--color-yellow);
+}
+
+section.stagehand_subcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#stagehand_logo {
+  display: block;
+  margin: auto;
+  width: 25%;
+}
+
+section.stagehand_details p{
+  text-align: left;
+}
+
+#arch {
+  width: 70%;
+}
+
+#button {
+  background-color: var(--color-maroon);
+  box-shadow: 5px 5px 5px var(--color-purple);
+  border: none;
+  color: white;
+  margin-top: 50px;
+  padding: 20px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: var(--color-purple);
+}
+
+section.other_projects {
+  padding: 100px;
+}
+
+section.other_projects h2 {
+  padding: 50px;
+}
+
+section.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+section.project {
+  width: 33%;
+}
+
+section.project img {
+  width: 500px;
+  box-shadow: 5px 5px 5px var(--color-purple);
+}
+
+section.project p {
+  width: 600px;
+  margin: auto;
+  padding-bottom: 20px; 
+}
+
+section.project h4 {
+  padding: 20px;
+}
+
+footer {
+  background-color: var(--color-yellow);
+  height: 300px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+footer > h4 {
+  padding: 30px;
+}
+
+footer > a {
+  padding: 30px;
+}
+
+header img {
+  width: 30px;
+}
+
+footer img {
+  width: 60px;
+}
+
+ul,
+ol {
+  list-style: inside;
+}
+
+footer a img, header a img {
+  width: 50px;
+  background-color: var(--color-maroon);
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px var(--color-purple);
+}
+
+footer a img:hover, header a img:hover {
+  background-color: var(--color-purple);
+}
+
+
+@media (max-width: 2000px) {
+  section.stagehand_subcontainer {
+    display: block;
+  }
+
+  section.projects {
+    display: block;
+  }
+
+  section.project {
+    width: 100%;
+  }
+  
+  section.stagehand_details {
+    line-height: 1.5;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+  }
+  section.profile p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  section.stagehand_subcontainer {
+    padding: 0;
+  }
+  section.stagehand_details {
+    padding: 0;
+    width: 100%;
+  }
+  #stagehand_logo {
+    width: 50%;
+  }
+  #arch {
+    width: 100%;
+  }
+  section.profile p {
+    width: 100%;
+  }
 }
